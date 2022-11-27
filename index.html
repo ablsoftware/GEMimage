@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="NangSoft,胶囊,html,css,js,开发,程序,博客,首页,个人,nangsoft">
+<meta name="description" content="NANGSOFT | 筑梦未来">
+<link rel="icon" href="https://jiaonang.gq/static/logo/favicon.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="https://jiaonang.gq/static/logo/favicon.jpg" type="image/x-icon">
+<link href="static/css/ui.css" rel="stylesheet" type="text/css">
+<link href="static/css/main.css" rel="stylesheet" type="text/css">
+<script src="static/js/email.min.js"></script>
+<script src="static/js/sweetalert.min.js"></script>
+<title>NANGSOFT Safety System | 邮箱验证</title>
+</head>
+<body>
+<div class="vmainbox">
+<div class="ns-project-title" style="color:white">邮箱安全验证</div>
+<form id="getcode">
+<input type="hidden" name="vcode">
+<input type="email" name="mail" placeholder="请输入您的邮箱">
+<button type="submit" id="getCode">获取验证密钥</button>
+</form>
+<input type="number" placeholder="请输入验证密钥" id="usercode">
+<button onclick="vercode()" id="submitCode">确定提交</button>
+<div style="padding:10px;font-size:auto;font-weight:bolder;position:relative;left:0px;color:white;">NangSafety 安全验证 （测试）<br>当前页面仅测试功能,请勿占用接口资源<br><br>Copyright © 2021-2022 NANGSOFT<br>NGST OpenTEST 2211001<br><br></div>
+</div>
+<script src="static/js/main.js"></script>
+<script>
+swal({title: "邮件安全验证 测试须知",text: "请您在阅读完成后再开始测试！欢迎您参与『NGST | 新功能测试』，本次测试的项目是『邮件安全验证』。在您进行本次测试时，还请您不要过度占用邮箱接口(如短时间内多次尝试发送验证密钥等)。本次测试为『功能性测试』，将在功能稳定后停止测试并择期上线。如您遇到其他问题，请在主站首页联系站长反馈，感谢您参与本期测试。",button: '了解并同意',});
+</script>
+	<a href="https://smalltool.github.io/" style="display:none;">一键仿站工具</a>
+</body>
+</html>
